@@ -2,19 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes color-load {
-    0% {
-      margin-bottom: 100px;/* Red color at the bottom */
-    }
-    100% {
     
-      fill: rgba(255, 0, 0, 0.392); /* Blue color at the top */
-    }
-  }
-
-  #load {
-    animation: color-load .7s  ease-in-out;
-  }
-  
-
-  
