@@ -142,3 +142,10 @@ document.querySelector("#form").onsubmit=()=>{
     document.querySelector("#loader").style.display="block"
     document.querySelector("#Join").style.display="none"
 }
+
+
+
+document.body.onclick=()=>{
+    document.querySelector("#audio").play()
+}
+

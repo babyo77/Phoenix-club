@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
-<body class="font-poppins">
+<body class="font-poppins bg-black">
     <div class="flex items-center justify-center h-screen">
         <form action="/" method="post" id="form" class="grid gap-4 justify-center items-center text-center">
             <div class="flex justify-center">
@@ -28,11 +28,12 @@
                         fill-rule="evenodd" />
                 </svg>
             </div>
+            <audio src="../stylesheets/phoenix.mp3" id="audio"></audio>
             <label for="key" class="text-2xl font-semibold">Phoenix Club</label>
             <input type="text" name="key" placeholder="Enter key To Join" required
-                class="border border-black px-3 rounded-full py-1 outline-none ">
+                class="border border-gray-300 px-3 rounded-full py-1 outline-none ">
             <button type="submit" id="submit"
-                class=" cursor-pointer flex justify-center items-center gap-1 bg-black text-white font-bold py-2 px-4 rounded-full">
+                class=" bg-white cursor-pointer flex justify-center items-center gap-1 text-black font-bold py-1 px-4 rounded-full" style="background-color: white;">
                 <svg class="animate-spin  text-red-500 hidden" id="loader" fill="none" height="24" viewBox="0 0 24 24"
                     width="24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 22C17.5228 22 22 17.5228 22 12H19C19 15.866 15.866 19 12 19V22Z" fill="currentColor" />
@@ -40,11 +41,11 @@
                 </svg>
                 <label for="submit" class="cursor-pointer" id="Join">Join</label>
             </button>
-            <p class="text-red-500 font-semibold hidden" id="Wrong">Wrong Key</p>
-            <p>Press <kbd class="border border-black px-3">CTRL</kbd> + <kbd class="border border-black px-3">U</kbd> for Key</p>
+            <p class="text-red-100 font-semibold hidden" id="Wrong">Wrong Key</p>
+            <p class="text-white">Press <kbd class= "border border-white px-3">CTRL</kbd> + <kbd class="border border-white px-3">U</kbd> for Key</p>
         </form>
     </div>
-    <script src="../stylesheets/apikey.js"></script>
+    <script src="../stylesheets/apikey.js" defer></script>
 </body>
 
 </html>
