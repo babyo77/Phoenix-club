@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "nodemon",
     "tailwind:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/style.css"
