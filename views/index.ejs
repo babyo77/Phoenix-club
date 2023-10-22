@@ -11,7 +11,7 @@
 </head>
 <body class="font-poppins">
     <div class="flex items-center justify-center h-screen">
-        <form action="/" method="post" class="grid gap-4 justify-center items-center text-center">
+        <form action="/" method="post" id="form" class="grid gap-4 justify-center items-center text-center">
             <div class="flex justify-center">
                 <svg class="h-3/4 w-3/4" id="load" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266 237">
                     <path fill="#f9a81b" stroke="#f9a81b"
@@ -33,12 +33,12 @@
                 class="border border-black px-3 rounded-full py-1 outline-none ">
             <button type="submit" id="submit"
                 class=" cursor-pointer flex justify-center items-center gap-1 bg-black text-white font-bold py-2 px-4 rounded-full">
-                <svg class="animate-spin text-red-500 hidden" id="loader" fill="none" height="24" viewBox="0 0 24 24"
+                <svg class="animate-spin  text-red-500 hidden" id="loader" fill="none" height="24" viewBox="0 0 24 24"
                     width="24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 22C17.5228 22 22 17.5228 22 12H19C19 15.866 15.866 19 12 19V22Z" fill="currentColor" />
                     <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor" />
                 </svg>
-                <label for="submit" class="cursor-pointer">Join</label>
+                <label for="submit" class="cursor-pointer" id="Join">Join</label>
             </button>
             <p class="text-red-500 font-semibold hidden" id="Wrong">Wrong Key</p>
         </form>

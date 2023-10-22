@@ -137,3 +137,8 @@
 //   const objectURL = URL.createObjectURL(selectedFile);
 //   document.querySelector("#cover-image").src = objectURL;
 // });
+
+document.querySelector("#form").onsubmit=()=>{
+    document.querySelector("#loader").style.display="block"
+    document.querySelector("#Join").style.display="none"
+}
