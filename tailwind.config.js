@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: ['*'],
   theme: {
     extend: {
       fontFamily:{
@@ -8,7 +8,12 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    {
+      tailwindcss: {},
+autoprefixer: {},
+    }
+  ],
 }
 
 
