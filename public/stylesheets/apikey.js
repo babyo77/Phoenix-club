@@ -145,7 +145,6 @@ document.querySelector("#form").onsubmit=()=>{
         if(!response.ok){
             document.querySelector("#Join").style.display="block"
             document.querySelector("#loader").style.display="none"
-
         }
     })
 }
