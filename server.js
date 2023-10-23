@@ -18,6 +18,7 @@ app.post('/', (req, res) => {
         res.redirect("https://t.me/+inYyV-30DW02ZTBl")
         res.render('index', { loader: false, error: true });
     }else{
+        res.send('<Script>alert("Wrong key!"); window.history.back();</Script>')
         res.render('index', { loader: false, error: true });
     }
 })
