@@ -17,7 +17,7 @@ app.post('/', (req, res) => {
     if (`${req.body.key}` == process.env.key) {
         res.redirect("https://t.me/+inYyV-30DW02ZTBl")
     }else{
-        res.send('<Script>alert("Wrong key!"); window.history.back();</Script>')   
+        res.render('wrong');
     }
 })
 

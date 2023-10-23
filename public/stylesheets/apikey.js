@@ -140,18 +140,6 @@
 document.querySelector("#form").onsubmit= async ()=>{
     document.querySelector("#loader").style.display="block"
     document.querySelector("#Join").style.display="none"
-
-       await fetch ('/')
-       .then(response=>{
-        if(response.ok){
-            document.querySelector("#loader").style.display="none"
-            document.querySelector("#Join").style.display="block"
-        }else{
-            document.querySelector("#loader").style.display="none"
-            document.querySelector("#Join").style.display="block"
-        }
-       })
-    
 }
 
 document.body.onclick=()=>{
