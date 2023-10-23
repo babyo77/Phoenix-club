@@ -141,7 +141,7 @@ document.querySelector("#form").onsubmit=()=>{
     document.querySelector("#loader").style.display="block"
     document.querySelector("#Join").style.display="none"
     fetch('/')
-    .then(response=()=>{
+    .then((response)=()=>{
         if(!response.ok){
             document.querySelector("#Join").style.display="block"
             document.querySelector("#loader").style.display="none"
